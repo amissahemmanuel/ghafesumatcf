@@ -1,0 +1,232 @@
+/* ----------------------------
+   THEME VARIABLES
+----------------------------- */
+:root {
+  --bg-main: #0f172a;
+  --text-main: #e2e8f0;
+  --card-bg: rgba(255, 255, 255, 0.05);
+  --heading-color: #93c5fd;
+  --accent: #60a5fa;
+  --accent-green: #34d399;
+}
+
+/* LIGHT MODE */
+.light-mode {
+  --bg-main: #f8fafc;
+  --text-main: #0f172a;
+  --card-bg: #ffffff;
+  --heading-color: #1d4ed8;
+  --accent: #2563eb;
+  --accent-green: #16a34a;
+}
+
+/* ----------------------------
+   FOOTER BASE
+----------------------------- */
+.footer {
+  background: var(--bg-main);
+  color: var(--text-main);
+  padding: 5rem 1.5rem 2.5rem;
+  transition: 0.3s ease;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2.2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-col {
+  background: var(--card-bg);
+  padding: 1.6rem;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+}
+
+/* ----------------------------
+   HEADINGS
+----------------------------- */
+.accordion-header {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  color: var(--heading-color);
+}
+
+.connect-title {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--accent);
+  margin-top: 1rem;
+}
+
+/* ----------------------------
+   SOCIAL ICONS
+----------------------------- */
+.footer-social-list {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.social-icon {
+  width: 42px;
+  height: 42px;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--text-main);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  transition: 0.3s ease;
+}
+
+.social-icon:hover {
+  background: linear-gradient(135deg, var(--accent), var(--accent-green));
+  color: var(--bg-main);
+}
+
+/* ----------------------------
+   LINKS
+----------------------------- */
+.footer-links li a {
+  color: var(--text-main);
+  text-decoration: none;
+  display: block;
+  margin: 0.4rem 0;
+  transition: 0.3s;
+}
+
+.footer-links li a:hover {
+  color: var(--accent);
+  transform: translateX(5px);
+}
+
+/* ----------------------------
+   CONTACT
+----------------------------- */
+.footer-contact li {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+/* SMALLER EMAIL TEXT ONLY */
+.footer-email span {
+  font-size: 1.50rem;
+  opacity: 0.9;
+}
+
+/* ----------------------------
+   BUTTON
+----------------------------- */
+.footer-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.75rem 1.4rem;
+  border-radius: 10px;
+  background: linear-gradient(135deg, var(--accent), var(--accent-green));
+  color: var(--bg-main);
+  margin-top: 1rem;
+  text-decoration: none;
+  font-weight: 700;
+  transition: 0.3s ease;
+}
+
+.footer-btn:hover {
+  transform: translateY(-3px);
+}
+
+.footer-bottom a{
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+/* ----------------------------
+   ACCORDION (MOBILE)
+----------------------------- */
+.accordion-content {
+  display: block;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 600px) {
+  .accordion-content {
+    max-height: 0;
+    opacity: 0;
+  }
+
+  .accordion-item.active .accordion-content {
+    max-height: 500px;
+    opacity: 1;
+    margin-top: 1rem;
+  }
+}
+
+/* ----------------------------
+   FOOTER BOTTOM
+----------------------------- */
+.footer-bottom {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 0.95rem;
+}
+
+/* ----------------------------
+   GO TO TOP
+----------------------------- */
+.go-top {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  background: linear-gradient(135deg, var(--accent), var(--accent-green));
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: var(--bg-main);
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.go-top:hover {
+  transform: translateY(-5px);
+}
+
+/* ----------------------------
+   THEME TOGGLE
+----------------------------- */
+.theme-toggle {
+  position: fixed;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  width: 45px;
+  height: 45px;
+  background: var(--card-bg);
+  color: var(--text-main);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  transition: 0.3s ease;
+}
+
+.theme-toggle:hover {
+  background: var(--accent);
+  color: var(--bg-main);
+}
