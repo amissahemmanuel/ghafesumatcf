@@ -70,4 +70,4 @@ If you'd like to contribute to the website development, please contact the websi
 ## Credits
 
 - Design by Amissah Emmanuel
-- Built with [iPortfolio](https://github.com/amissah/iPortfolio) template
+
