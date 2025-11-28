@@ -53,18 +53,6 @@ GHAFES Website/
 └── connect-group.html
 ```
 
-## Contact Information
-
-- **Email**: umatcfghafes@gmail.com
-- **Phone**: 0530523356
-- **Location**: P.O Box 237, Tarkwa, Western Region, Ghana
-
-## Banking Details
-
-- **Bank**: Ecobank Tarkwa Branch
-- **Account Number**: 144100153027
-- **Mobile Money**: 0530523356
-
 ## Social Media
 
 - **Telegram**: [@ghafesumat](https://t.me/ghafesumat)
@@ -77,7 +65,7 @@ If you'd like to contribute to the website development, please contact the websi
 
 ## License
 
-© Copyright GHAFES UMaT-CF 2024. All rights reserved.
+© Copyright GHAFES UMaT-CF 2025. All rights reserved.
 
 ## Credits
 
